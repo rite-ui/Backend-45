@@ -1,10 +1,10 @@
 import express from 'express';
-import {authenticateToken} from "../middleware/auth.middleware.js";
+import { authenticationToken } from '../middleware/auth.middleware.js';   
 
 
 const router = express.Router();
 
-router.get('/',authenticateToken, (req , res)=> {
+router.get('/',authenticationToken, (req , res)=> {
     res.status(200).json({
         message: 'Welcome to the private route',
         user: req.user

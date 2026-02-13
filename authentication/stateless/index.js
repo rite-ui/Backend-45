@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 import authRoutes from './routes/user.routes.js';
-import privateRoutes from './routes/private.routes.js';
+import privateRoutes from './routes/privates.routes.js';
 
 dotenv.config();
 const app = express();
